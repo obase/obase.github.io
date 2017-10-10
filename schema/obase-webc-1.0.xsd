@@ -18,6 +18,7 @@
 		<xsd:element name="controlSuffix" type="xsd:string" minOccurs="0" maxOccurs="1" />
 		<xsd:element name="wsidTokenBase" type="xsd:int" minOccurs="0" maxOccurs="1" />
 		<xsd:element name="wsidDomain" type="xsd:string" minOccurs="0" maxOccurs="1" />
+		<xsd:element name="wsidName" type="xsd:string" minOccurs="0" maxOccurs="1" />
 		<xsd:element name="defaultAuthType" type="xsd:string" minOccurs="0" maxOccurs="1" />
 		<xsd:element name="refererDomain" type="xsd:string" minOccurs="0" maxOccurs="1" />
 	</xsd:all>
