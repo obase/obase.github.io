@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://obase.github.io/schema/mysql" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://obase.github.io/schema/mysql" elementFormDefault="qualified">
+
+	<xs:complexType name="leafType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="id" type="xs:string" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="compType" mixed="true">
+		<xs:complexContent>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="whenall" type="compType" />
+				<xs:element name="whenany" type="compType" />
+				<xs:element name="isnull" type="leafType" />
+				<xs:element name="notnull" type="leafType" />
+				<xs:element name="foreach" type="leafType" />
+			</xs:choice>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="stmtType">
+		<xs:complexContent>
+			<xs:extension base="compType">
+				<xs:attribute name="id" type="xs:string" use="required" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:element name="obase-mysql">
+		<xs:complexType>
+			<xs:attribute name="namespace" type="xs:string" use="optional" />
+			<xs:sequence>
+				<xs:element name="table-class" type="classType" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element name="meta-class" type="leafType" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element name="statement" type="stmtType" maxOccurs="unbounded" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
