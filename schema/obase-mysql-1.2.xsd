@@ -12,11 +12,10 @@
 	<xs:complexType name="compType" mixed="true">
 		<xs:complexContent>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
-				<xs:element name="whenall" type="compType" />
-				<xs:element name="whenany" type="compType" />
-				<xs:element name="isnull" type="leafType" />
-				<xs:element name="notnull" type="leafType" />
-				<xs:element name="foreach" type="leafType" />
+				<xs:element name="where" type="compType" />
+				<xs:element name="and" type="compType" />
+				<xs:element name="or" type="compType" />
+				<xs:element name="x" type="compType" />
 			</xs:choice>
 		</xs:complexContent>
 	</xs:complexType>
