@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns="http://obase.github.io/schema/webc" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://obase.github.io/schema/webc" elementFormDefault="qualified" attributeFormDefault="unqualified">
 
-	<xs:simpleType name="emptyString">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="" />
-		</xs:restriction>
-	</xs:simpleType>
 	<xsd:complexType name="filterConfigType">
 		<xsd:all>
 			<xsd:element name="namespace" type="xsd:string" minOccurs="0" maxOccurs="1" />
