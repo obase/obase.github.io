@@ -6,7 +6,6 @@
 			<xs:enumeration value="" />
 		</xs:restriction>
 	</xs:simpleType>
-
 	<xsd:complexType name="filterConfigType">
 		<xsd:all>
 			<xsd:element name="namespace" type="xsd:string" minOccurs="0" maxOccurs="1" />
