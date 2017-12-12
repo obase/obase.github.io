@@ -5,7 +5,7 @@
 			<xsd:restriction base="xs:string">
 				<xsd:enumeration value="" />
 			</xsd:restriction>
-		</xs:simpleType>
+		</xsd:simpleType>
 	
 		<xsd:complexType name="filterConfigType">
 			<xsd:all>
