@@ -6,6 +6,7 @@
 			<xsd:element name="contextConfigLocation" type="xsd:string" minOccurs="0" maxOccurs="1" />
 			<xsd:element name="asyncListener" type="xsd:string" minOccurs="0" maxOccurs="1" />
 			<xsd:element name="asyncTimeout" type="xsd:long" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="asyncOff" type="xsd:string" minOccurs="0" maxOccurs="1" />
 			<xsd:element name="sendError" type="xsd:string" minOccurs="0" maxOccurs="1" />
 			<xsd:element name="controlProcessor" type="xsd:string" minOccurs="0" maxOccurs="1" />
 			<xsd:element name="controlPrefix" type="xsd:string" minOccurs="0" maxOccurs="1" />
@@ -14,7 +15,7 @@
 			<xsd:element name="wsidDomain" type="xsd:string" minOccurs="0" maxOccurs="1" />
 			<xsd:element name="wsidName" type="xsd:string" minOccurs="0" maxOccurs="1" />
 			<xsd:element name="wsidTimeout" type="xsd:long" minOccurs="0" maxOccurs="1" />
-			<xsd:element name="offCsrf" type="xsd:string" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="csrfOff" type="xsd:string" minOccurs="0" maxOccurs="1" />
 			<xsd:element name="defaultAuthType" type="xsd:string" minOccurs="0" maxOccurs="1" />
 			<xsd:element name="refererDomain" type="xsd:string" minOccurs="0" maxOccurs="1" />
 		</xsd:all>
