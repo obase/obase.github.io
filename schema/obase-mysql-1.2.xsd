@@ -30,6 +30,7 @@
 			</xs:choice>
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:string" use="required" />
+		<xs:attribute name="nop" type="xs:boolean" use="optional" />
 	</xs:complexType>
 
 	<xs:complexType name="mysqlType">
